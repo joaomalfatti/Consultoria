@@ -1,3 +1,7 @@
+import 'package:consultoria/TelaCliente.dart';
+import 'package:consultoria/TelaContato.dart';
+import 'package:consultoria/TelaEmpresa.dart';
+import 'package:consultoria/TelaServico.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,19 +14,35 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   void _abrirEmpresa(){
-
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context)=> TelaEmpresa())
+    );
   }
 
   void _abrirServico(){
-
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context)=> TelaServico())
+    );
   }
 
   void _abrirCliente(){
-
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context)=> TelaCliente())
+    );
   }
 
   void _abrirContato(){
-
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context)=> TelaContato())
+    );
   }
 
   @override
