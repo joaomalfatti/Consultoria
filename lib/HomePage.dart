@@ -40,11 +40,14 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset("imagens/logo.png"),
             Padding(
                 padding: EdgeInsets.only(top: 32),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     GestureDetector(
                       onTap: _abrirEmpresa,
@@ -60,6 +63,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
                 padding: EdgeInsets.only(top: 32),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     GestureDetector(
                       onTap: _abrirCliente,
